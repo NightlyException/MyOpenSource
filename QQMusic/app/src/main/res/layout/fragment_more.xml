@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/toolbarGreen"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+        <TextView
+            android:id="@+id/tvBack"
+            android:background="@mipmap/arrow_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

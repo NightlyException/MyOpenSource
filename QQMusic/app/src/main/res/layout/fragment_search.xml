@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/toolbarGreen"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/arrow_left" />
+
+        <EditText
+            android:id="@+id/edInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_toolbar_edtext"
+            android:drawableRight="@mipmap/microphone"
+            android:hint="请输入搜索内容"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:textColorHint="#b7b7b7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvRecent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+        <ListView
+            android:id="@+id/lvResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+</LinearLayout>
